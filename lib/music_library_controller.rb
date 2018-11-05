@@ -62,6 +62,7 @@ class MusicLibraryController
   		opt = self.getCmd
       opt = opt.downcase.gsub(" ", "_")
   		send Menu[opt][:bloc]
+      binding.pry
 
   		count += 1
   	end
